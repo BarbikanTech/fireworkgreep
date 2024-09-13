@@ -1,0 +1,1041 @@
+<?php
+include "db/config.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head itemscope itemtype="http://www.schema.org/website">
+	<title>DLS Crackers</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="https://.com">
+	<meta property="og:image" content="https://.com/images/android-icon-192x192.png">
+	<meta name="keywords" content="">
+	<meta property="og:description" name="description" content="">
+	<meta name="robots" content="all">
+	<meta name="revisit-after" content="10 Days">
+	<meta name="copyright" content="">
+	<meta name="language" content="English">
+	<meta name="distribution" content="Global">
+	<meta name="web_author" content="barbikantechnologies">
+	<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+	<link rel="icon" sizes="192x192"  href="images/android-icon-192x192.png">
+	<link rel="stylesheet" href="fonts/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fonts/css/all.min.css">
+    <link rel="stylesheet" href="fonts/css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/marquee.js"></script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+<?php include("header.php");?>
+<img src="images/productbanner.jpg" class="img-fluid w-100" alt="">
+
+<div class="cart-bg sticky">
+	<div class="container">
+		<table style="margin: auto;" cellspacing="1" cellpadding="1">
+			<tbody>
+				<tr>
+					<td> Total Products : <span class="product_count"> </span> </td>
+					<td> Discount Total : <span class="discount_total"></span> </td>
+					<td> Overall Total : <span class="overall_total"></span> </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="pricelist_products">
+		<?php
+		// Product Listing Start
+		$sql = "SELECT * FROM `category`";
+		$result = $conn->query($sql);
+		if ($result->num_rows > 0) {
+			while ($row = $result->fetch_assoc()) {
+		?>
+<table>
+	<tbody >
+		<tr class="category-row">
+			<td colspan="8">
+				Ground Chakkars (60% Discount)                            
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<table>
+	<tbody >
+		<tr class="category-row">
+			<td colspan="8">
+				Ground Chakkars (60% Discount)                            
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-3 col-6">
+			<div class="prodct-card">
+				<a type="button" class="" data-bs-toggle="modal" data-bs-target="#productmodal">
+					<div class="product-img text-center pb-2">
+						<img src="images/dls.jpg" class="img-fluid" alt="">
+					</div>
+				</a>
+				<div class="prdct-name text-center py-1">
+						10 cm Sparkles
+				</div>
+				<div class="product-content py-2 text-center">
+					<span> Box</span>
+				</div>
+				<div class="prdct-price">
+					<span class="strike"><i class="fa fa-inr"></i>300</span>
+					<span class=""><i class="fa fa-inr"></i>130</span>
+				</div>
+				<div class="prdct-qty">
+					<Form>
+						<input type="text" class="form-control prdct-box" placeholder="Qty">
+					</Form>
+					<Form>
+						<input type="text" class="form-control price-box" placeholder="Price">
+					</Form>
+				</div>
+			</div>
+			<div class="modal fade" id="productmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">10 Cm sparkles</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="images/dls.jpg" class="img-fluid w-75" alt="">
+						</div>
+						<div class="modal-footer">
+							<table>
+								<tr class="text-center">
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+									<td>
+										<img src="images/dls.jpg" class="img-fluid w-50" alt="">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="fixed point2">
+	<div class="nav-trigger smallbutton btncart" data-bs-toggle="offcanvas" data-bs-target="#productscart">
+		<span style="font-size:30px;cursor:pointer">
+			<i class="fa fa-shopping-cart"></i>
+		</span>
+		<div class="product-count">
+			<span>66</span>
+		</div>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end sidenav" tabindex="-1" id="productscart">
+	<div class="container">
+		<div class="offcanvas-header">
+			<a class=" btn-close p-4" data-bs-dismiss="offcanvas"></a>
+		</div>
+		<div class="w-100 mt-3">
+			<h5 class="text-white roboto text-center heading4">Myshi Crackers</h5>
+			<div class="w-100 text-center text-white">2/2204-19,Devi Nagar, Sasi Nagar<br>Sivakasi, Sivakasi, Tamil Nadu - 626 131 </div>
+			<div class="w-100 text-center text-white mb-3"> Mobile No : 9994307256 </div>
+		</div>
+		<div class="w-100 pb-3 leftbg" style="display: inline-block;">
+			<div class="table-responsive">
+				<table cellpadding="0" cellspacing="0" class="pricelist_table table card_products_table mb-0">
+					<thead>
+						<tr>
+							<td>Image</td>
+							<td>Name</td>
+							<td style="width: 75px;">Qty/Price</td>
+							<td style="width: 125px;" class="text-center">Total</td>
+						</tr>
+					</thead>
+					<tbody id="demo">
+						<tr>
+							<td class="text-center">
+								<div class="product-img text-center pb-2">
+       								<img src="images/dls.jpg" class="img-fluid" alt="">
+								</div>
+							</td>
+							<td class="product_name text-left" style="width:100%">Ground Chakar asoka big (25pcs)</td>
+							<td class="quantity text-center">
+							<Form>
+								<input type="text" class="prdct-box" placeholder="Qty">
+								<span class="actual_price"><i class="fa fa-inr"></i>55</span>
+							</Form>
+							</td>
+							<td class="amount text-center">
+								<span class="actual_price">110</span>
+							</td>
+							<td class="amount text-center">
+								<span class="fa fa-times"></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<div class="product-img text-center pb-2">
+       								<img src="images/dls.jpg" class="img-fluid" alt="">
+								</div>
+							</td>
+							<td class="product_name text-left" style="width:100%">Ground Chakar asoka big (25pcs)</td>
+							<td class="quantity text-center">
+							<Form>
+								<input type="text" class="prdct-box" placeholder="Qty">
+								<span class="actual_price"><i class="fa fa-inr"></i>55</span>
+							</Form>
+							</td>
+							<td class="amount text-center">
+								<span class="actual_price">110</span>
+							</td>
+							<td class="amount text-center">
+								<span class="fa fa-times"></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<div class="product-img text-center pb-2">
+       								<img src="images/dls.jpg" class="img-fluid" alt="">
+								</div>
+							</td>
+							<td class="product_name text-left" style="width:100%">Ground Chakar asoka big (25pcs)</td>
+							<td class="quantity text-center">
+							<Form>
+								<input type="text" class="prdct-box" placeholder="Qty">
+								<span class="actual_price"><i class="fa fa-inr"></i>55</span>
+							</Form>
+							</td>
+							<td class="amount text-center">
+								<span class="actual_price">110</span>
+							</td>
+							<td class="amount text-center">
+								<span class="fa fa-times"></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<div class="product-img text-center pb-2">
+       								<img src="images/dls.jpg" class="img-fluid" alt="">
+								</div>
+							</td>
+							<td class="product_name text-left" style="width:100%">Ground Chakar asoka big (25pcs)</td>
+							<td class="quantity text-center">
+							<Form>
+								<input type="text" class="prdct-box" placeholder="Qty">
+								<span class="actual_price"><i class="fa fa-inr"></i>55</span>
+							</Form>
+							</td>
+							<td class="amount text-center">
+								<span class="actual_price">110</span>
+							</td>
+							<td class="amount text-center">
+								<span class="fa fa-times"></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<div class="product-img text-center pb-2">
+       								<img src="images/dls.jpg" class="img-fluid" alt="">
+								</div>
+							</td>
+							<td class="product_name text-left" style="width:100%">Ground Chakar asoka big (25pcs)</td>
+							<td class="quantity text-center">
+							<Form>
+								<input type="text" class="prdct-box" placeholder="Qty">
+								<span class="actual_price"><i class="fa fa-inr"></i>55</span>
+							</Form>
+							</td>
+							<td class="amount text-center">
+								<span class="actual_price">110</span>
+							</td>
+							<td class="amount text-center">
+								<span class="fa fa-times"></span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+    		</div>
+            <div class="d-flex px-3">
+				<p class="bill1 roboto"><span class="heading6"> Net Total </span>
+					<span class="fnt1">
+						<i class="fa fa-inr"></i> 
+						<span class="net_total"></span>
+					</span>
+				</p>
+			</div>
+			<div class="d-flex px-3">
+				<p class="bill1 roboto">
+					<span class="heading6"> Discount Total </span>
+						<span class="fnt1"><i class="fa fa-inr"></i> 
+						<span class="discount_total"></span>
+					</span>
+				</p>
+			</div>
+			<div class="d-flex px-3">
+				<p class="bill1 roboto">
+					<span class="heading6"> Sub Total </span>
+					<span class="fnt1"><i class="fa fa-inr"></i> 
+					<span class="sub_total"></span>
+					</span>
+				</p>
+			</div>
+			<div class="p-4" id="cnf-estimate">
+				<p class="roboto" id="#enq-form"data-bs-toggle="offcanvas"data-bs-target="#enq-form" >
+					<span class="btn btn-success">Confirm Estimate</span>
+				</p>
+			</div> 
+		</div>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end sidenav" tabindex="-1" id="enq-form">
+	<div class="container px-4">
+		<div class="offcanvas-header">
+			<a class=" btn-close p-4" data-bs-dismiss="offcanvas"></a>
+		</div>
+		<div class="w-100 mt-3">
+			<h5 class="text-white text-center heading4">Myshi Crackers</h5>
+			<div class="w-100 text-center text-white">2/2204-19,Devi Nagar, Sasi Nagar<br>Sivakasi, Sivakasi, Tamil Nadu - 626 131 </div>
+			<div class="w-100 text-center text-white mb-3"> Mobile No : 9994307256 </div>
+		</div>
+		<div class="enq-form">
+			<div class="mb-3">
+				<select class="form-select form-control">
+					<option selected>Select the State</option>
+					<option value="1">Tamilnadu</option>
+					<option value="2">Karnataka</option>
+					<option value="3">Andrapradesh</option>
+				</select>
+				<span class="exclamation">
+					<i class="fa fa-exclamation-circle"></i>
+					Select the State
+				</span>
+			</div>
+				<div class="mb-3">
+					<select class="form-select form-control" aria-label="Default select example">
+						<option selected>Select The city</option>
+						<option value="1">Ariyalur</option>
+						<option value="2">Trichy</option>
+						<option value="3">Salem</option>
+					</select>
+					<span class="exclamation">
+						<i class="fa fa-exclamation-circle"></i>
+						Select the city
+					</span>
+				</div>
+			<div class="form-label-group in-border mb-3">
+				<input type="text" name="name" value="" class="form-control shadow-none" placeholder="Customer Name*">
+				<span class="exclamation">
+					<i class="fa fa-exclamation-circle"></i>
+					Enter the Name
+				</span>
+			</div>
+			<div class="form-label-group in-border mb-3">
+				<input type="MobileNumber" name="Mobile Number" value="" class="form-control shadow-none" placeholder="Mobile Number*">
+				<span class="exclamation">
+					<i class="fa fa-exclamation-circle"></i>
+					Enter the Mobile Number
+				</span>
+			</div>
+			<div class="form-label-group in-border mb-3">
+				<input type="text" name="name" value="" class="form-control shadow-none" placeholder="email">
+			</div>
+			<div class="form-label-group in-border mb-0">
+				<textarea name="address" class="form-control" placeholder="Address*"></textarea>
+				<span class="exclamation">
+					<i class="fa fa-exclamation-circle"></i>
+					Enter the Address
+				</span>
+			</div>
+			<div style="color: #fff;" class="w-100 form-group">
+                <div class="row">
+					<div class="col-8 text-right">Sub Total : </div>
+					<div class="col-4 text-right"><span class="sub_total pr-3">Rs.738.74</span></div>
+                </div>
+            </div>
+			<div style="color: #fff;" class="w-100 form-group minimum_order_amount_cover ">
+				<div class="row">
+					<div class="col-8 text-right">Min.Order Amount : </div>
+					<div class="col-4 text-right"><span class="minimum_order_amount pr-3">Rs.3,000.00</span></div>
+				</div>
+			</div>
+			<div style="color: #fff;" class="w-100 form-group packing_charges_cover  d-none ">
+				<div class="row">
+					<div class="col-8 text-right">Packing Charges : <span class="packing_charges"></span> </div>
+					<div class="col-4 text-right"><span class="packing_charges_value pr-3"></span></div>
+				</div>
+			</div>
+			<div style="color: #fff;" class="w-100 form-group">
+				<div class="row">
+					<div class="col-8 text-right">Round OFF : </div>
+					<div class="col-4 text-right"><span class="round_off pr-3">0.26</span></div>
+				</div>
+			</div>
+			<div style="color: #fff;" class="w-100 form-group">
+				<div class="row">
+					<div class="col-8 text-right">Overall Total : </div>
+					<div class="col-4 text-right"><span class="overall_total pr-3">Rs.739</span></div>
+				</div>
+			</div>
+			<div class="w-100 text-center my-2">
+				<button class="btn btn-success btnwidth submit_button" type="button">Submit</button> &nbsp;
+				<button class="btn btn-danger btnwidth" type="button">Back</button>
+			</div>
+		</div> 
+	</div>          
+</div>
+<!-- productend -->
+<div class="top-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12"></div>
+			<div class="col-lg-12 py-2">
+				<div class="trebuchet text-center text-white">Copyright &copy; 2023, DLS Crackers. <span class="wrdbrk">All rights reserved </span></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
